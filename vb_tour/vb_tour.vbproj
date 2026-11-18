@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Visual Basic has no single-file mode like `dotnet run file.cs`, so the tour needs this
+       small project file. The command that runs it is at the top of vb_tour.vb.
+
+       The project lives in a folder of its own on purpose: a project file next to
+       csharp_tour.cs would make `dotnet run csharp_tour.cs` start this project instead. -->
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <!-- Run on a newer .NET runtime when .NET 10 is not installed. -->
+    <RollForward>Major</RollForward>
+    <!-- Types without a Namespace block land in this namespace. -->
+    <RootNamespace>VbTour</RootNamespace>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+</Project>
